@@ -91,7 +91,52 @@ header{
 }
 /*Inicio del medio*/
 section {
-    flex: 1;
+    width: 99%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: chartreuse;
+}
+section h2 {
+    padding: 0px 30px;
+    margin-bottom: 5px;
+}
+.pizzaMarco {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 700px;
+    height: 200px;
+}
+.info {
+    border: 5px solid white;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+section div {
+    border: 5px solid black;
+    margin: 5px 10px 5px 50px;
+    padding: 5px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+section div img {
+    width: 180px;
+    height: 190px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.info h3 {
+    font-size: 30px;
+    font: bold;
+}
+.info p {
+    font-size: 20px;
 }
 /*Inicio del pie*/
 footer {
