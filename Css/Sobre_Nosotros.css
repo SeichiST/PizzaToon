@@ -53,6 +53,7 @@ header{
     margin: 0px;
 }
 .menu a {
+    border-radius: 10px;
     font-size: 25px;
     background: rgb(201, 130, 0);
     color: white;
@@ -71,6 +72,7 @@ header{
     margin: 0px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.342);
     z-index: 10;
+    border-radius: 10px;
 }
 .menu li:hover .submenu {
     display: block;
