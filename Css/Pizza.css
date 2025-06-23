@@ -2,6 +2,7 @@ html {
     background-color:rgb(252, 172, 25);
     height: 100%;
     margin: 0;
+    scroll-behavior: smooth;
 }
 #Contenedor {
     font-family: Arial, sans-serif;
