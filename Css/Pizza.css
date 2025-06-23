@@ -10,7 +10,6 @@ html {
     display: flex;
     flex-direction: column;
     background-color: rgb(255, 173, 20);
-    height: 100%;
     width: 100%;
 }
 body {
@@ -126,13 +125,13 @@ section h2 {
     flex-direction: column;
 }
 .info {
-    height: 110px;
+    height: 125px;
 }
 .AllPizza {
     border-radius: 10px;
-    background-color: rgb(252, 198, 82);
-    margin: 0px 5px 5px 10px;
-    padding: 5px 10px;
+    background-color: rgba(247, 189, 63, 0.473);
+    margin: 0px 50px 5px 10px;
+    padding: 5px 20px 20px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
