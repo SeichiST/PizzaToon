@@ -173,7 +173,17 @@ footer p {
     color: yellow;
 }
 footer img {
+    padding: 5px;
     max-height: 70px;
     width: 60px;
     height: 60px;
+}
+/*Tamaño de la página*/
+@media (max-width: 620px) {
+    footer img {
+        padding: 5px;
+        max-height: 70px;
+        width: 20px;
+        height: 20px;
+    }
 }
