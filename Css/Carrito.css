@@ -3,7 +3,62 @@
     height: 30px;
     padding: 0px 20px;
 }
-#Carrito {
-    background-color: rgba(255, 255, 255, 0);
-    border: 0px solid;
+.carritoNav {
+    display: none;
+    text-align: center
+}
+#Contenedor nav .compras:hover > .carritoBuy{
+    display: block;
+    width: 370px;
+    height: 500px;
+    position: absolute;
+    right: 10px;
+    background-color: rgb(245, 169, 82);
+    border: 5px rgba(0, 0, 0, 0.384) solid;
+    border-radius: 10px;
+    box-shadow: -10px 10px 5px rgba(0, 0, 0, 0.212);
+    list-style: none;
+}
+#Contenedor nav .compras:hover .carritoNav {
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 90px 85px 60px 80px 10px;
+    align-items: center;
+    padding: 5px 10px;
+    margin: 10px auto 5px;
+    gap: 7px;
+    border-bottom: 1px solid black;
+    list-style: none;
+}
+.carritoBuy li {
+    list-style: none;
+    font-size: 19px;
+}
+.Compra:hover .carritoBuy {
+    display: block;
+}
+/*Contenido dentro del carrito*/
+.Productos {
+    display: none;
+    text-align: center;
+    padding: 5px 5px;
+    border-bottom: 2px solid rgb(138, 90, 0);
+    margin: 0 5px 1px;
+}
+#Contenedor nav .compras:hover .carritoBuy > .Productos {
+    display: grid;
+    grid-template-columns: 80px 95px 70px 75px 30px;
+    align-items: center;
+    padding: 5px 10px;
+}
+.Productos img {
+    width: 65px;
+}
+.Productos p {
+    font-size: 17px;
+    margin: 0 5px;
+    text-align: center;
+    padding: 5px 0;
+    overflow-wrap: break-word;
+
 }

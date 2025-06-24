@@ -94,7 +94,6 @@ section {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: rgba(254,210,28,254);
 }
 .General {
     border-radius: 10px;
