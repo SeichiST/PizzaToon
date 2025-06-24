@@ -11,6 +11,7 @@ html {
     flex-direction: column;
     background-color: rgb(255, 173, 20);
     width: 100%;
+    height: 100%;
 }
 body {
     margin: 0;
@@ -92,75 +93,46 @@ header{
     padding: 0px 20px;
 }
 /*Inicio del medio*/
-section {
-    width: 99%;
-    padding: 10px;
+section{
+    flex: 1;
+}
+.Integrantes {
+    background-color: rgb(241, 179, 62);
+    border-radius: 20px;
+    margin: 10px 300px;
+    height: 750px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: rgba(254,210,28,254);
-}
-.General {
-    border-radius: 10px;
-    background-color: rgb(255, 199, 95);
-    padding: 5px;
+    align-items: center;
 }
 section h2 {
-    padding: 0px 30px;
-    margin-bottom: 5px;
+    text-align: center;
+    font-size: 40px;
+    margin: 50px;
 }
-.pizzaMarco {
+.Perfil {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    width: 630px;
-    height: 200px;
-}
-.infoHei {
-    border: 5px solid rgba(255, 255, 255, 0.26);
-    border-radius: 10px;
-    background-color: rgb(231, 167, 47);
-    width: 400px;
-    padding: 0 10px;
-    display: flex; 
-    flex-direction: column;
-}
-.info {
-    height: 125px;
-}
-.AllPizza {
-    border-radius: 10px;
-    background-color: rgba(247, 189, 63, 0.473);
-    margin: 0px 50px 5px 10px;
-    padding: 5px 20px 20px;
-    display: flex;
-    flex-wrap: wrap;
     gap: 20px;
 }
-section div img {
-    width: 180px;
-    height: 190px;
-    border-radius: 5px;
-    padding: 5px;
+section figure {
+    background-color: rgb(252, 190, 76);
+    border-radius: 20px;
+    height: 400px;
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.info h3 {
+section img {
+    width: 300px;
+    padding: 20px;
+    border-radius: 30px;
+}
+section figcaption {
     font-size: 30px;
-    font: bold;
-    margin: 10px 0;
-}
-.info p {
-    margin: 0;
-    font-size: 20px;
-}
-.infoHei button {
-    width: 130px;
-    margin: 10px 0 0;
-    background-color: rgb(238, 192, 64);
-    border: 2px solid rgba(235, 177, 17, 0.74);
-    border-radius: 5px;
-    font-size: 25px;
+    text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0;
 }
 /*Inicio del pie*/
 footer {
@@ -180,14 +152,27 @@ footer img {
     width: 60px;
     height: 60px;
 }
-/*Tamaño de la página*/
-@media (max-width: 1419px) {
-    .AllPizza {
+/*Tamaño de la pégina*/
+@media (max-width: 1448px) {
+    .Integrantes {
+        background-color: rgb(241, 179, 62);
+        border-radius: 20px;
+        margin: 10px auto;
+        height: 750px;
+        width: 800px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 20px;
     }
+    section figure {
+        background-color: rgb(252, 190, 76);
+        border-radius: 20px;
+        height: 400px;
+        margin: 0 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
 }
 @media (max-width: 620px) {
     footer img {

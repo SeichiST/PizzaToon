@@ -53,6 +53,7 @@ header{
     margin: 0px;
 }
 .menu a {
+    border-radius: 10px;
     font-size: 25px;
     background: rgb(201, 130, 0);
     color: white;
@@ -71,6 +72,7 @@ header{
     margin: 0px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.342);
     z-index: 10;
+    border-radius: 10px;
 }
 .menu li:hover .submenu {
     display: block;
@@ -131,6 +133,7 @@ footer p {
     color: yellow;
 }
 footer img {
+    padding: 5px;
     max-height: 70px;
     width: 60px;
     height: 60px;
@@ -150,5 +153,13 @@ footer img {
     section p {
         font-size: 23px;
         width: 80%;
+    }
+}
+@media (max-width: 620px) {
+    footer img {
+        padding: 5px;
+        max-height: 70px;
+        width: 20px;
+        height: 20px;
     }
 }
