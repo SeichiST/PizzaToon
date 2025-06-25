@@ -38,6 +38,11 @@
     display: block;
 }
 /*Contenido dentro del carrito*/
+.carritoBuy .Productos {
+    max-height: 440px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
 .Productos div{
     display: none;
     text-align: center;
@@ -63,4 +68,7 @@
 }
 .Productos p:last-child span {
     font-size: 20px;
+}
+.Borrar {
+    font-weight: bold;
 }
