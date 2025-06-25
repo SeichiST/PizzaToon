@@ -38,16 +38,16 @@
     display: block;
 }
 /*Contenido dentro del carrito*/
-.Productos {
+.Productos div{
     display: none;
     text-align: center;
     padding: 5px 5px;
     border-bottom: 2px solid rgb(138, 90, 0);
     margin: 0 5px 1px;
 }
-#Contenedor nav .compras:hover .carritoBuy > .Productos {
+#Contenedor nav .compras:hover .carritoBuy > .Productos div {
     display: grid;
-    grid-template-columns: 80px 95px 70px 75px 30px;
+    grid-template-columns: 80px 95px 95px 50px 30px;
     align-items: center;
     padding: 5px 10px;
 }
@@ -60,5 +60,7 @@
     text-align: center;
     padding: 5px 0;
     overflow-wrap: break-word;
-
+}
+.Productos p:last-child span {
+    font-size: 20px;
 }
