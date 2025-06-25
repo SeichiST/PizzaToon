@@ -123,4 +123,63 @@ footer img {
     width: 50px;
     height: 50px;
 }
+.Titulo{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(172, 39, 6);
+    margin: 20px auto;
+}   
+.carrusel {
+    display: flexbox;
+    margin: auto;
+    justify-content: center;
+    width: 550px;
+    height: auto;
+    margin: 10px, auto 0;
+    overflow: hidden;
+}
+.carrusel img {
+    text-align: center;
+    width: 550px;
+    height: 350px;
+}
+.carrusel ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    animation: slide 15s infinite alternate ease-in-out;
+}
+.carrusel li {
+    width: 100%;
+    list-style: none;
+    position: relative;
 
+}
+.imageninferior {
+    text-align: center;
+    padding: 30px;
+    display: block;
+    margin: auto;
+    width: 1200px;
+    height: 450px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.imageninferior img {
+    width: 900px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px rgba(1, 1, 1, 0.442);
+}
+@keyframes slide {
+    0%{ margin-left: 0;}
+    20%{ margin-left: 0;}
+
+    25%{ margin-left: -100%;}
+    45%{ margin-left: -100%;}
+
+    50%{ margin-left: -200%;}
+    70%{ margin-left: -200%;}
+}
