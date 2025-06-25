@@ -10,12 +10,14 @@ document.addEventListener("DOMContentLoaded", () => {
         ArticulosCarrito = JSON.parse(datosGuardados);
         CarritoHTML();
     }
+
+    RegistrarEventListener()
 });
 
-RegistrarEventListener()
-
 function RegistrarEventListener() {
-    productList.addEventListener('click', agregarProd);
+    if (productList) {
+        productList.addEventListener('click', agregarProd);
+    }
 
 //Elimminar producto
      carrito.addEventListener('click', eliminarProd);
