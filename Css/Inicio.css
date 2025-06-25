@@ -57,7 +57,7 @@ header{
 .menu a {
     border-radius: 10px;
     font-size: 25px;
-    background: rgb(201, 130, 0);
+    background: rgb(216, 142, 4);
     color: white;
     padding: 8px 12px;
     text-decoration: none;
@@ -68,7 +68,7 @@ header{
 .submenu {
     display: none;
     position:absolute;
-    background: rgb(201, 130, 0);
+    background: rgb(216, 143, 8);
     list-style: none;
     padding-left: 0px;
     top: 100%;
@@ -97,7 +97,12 @@ header{
     padding: 0px 20px;
 }
 footer {
-    padding: 0 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 0px;
+    margin: auto;
     align-items: center;
     background-color: orange;
     display: flex;
@@ -122,4 +127,64 @@ footer img {
 .redes img {
     width: 50px;
     height: 50px;
+}
+.Titulo{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(172, 39, 6);
+    margin: 20px auto;
+}   
+.carrusel {
+    display: flexbox;
+    margin: auto;
+    justify-content: center;
+    width: 650px;
+    height: 400px;
+    margin: 10px, auto 0;
+    overflow: hidden;
+}
+.carrusel img {
+    text-align: center;
+    width: 650px;
+    height: 400px;
+}
+.carrusel ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    animation: slide 15s infinite alternate ease-in-out;
+}
+.carrusel li {
+    width: 100%;
+    list-style: none;
+    position: relative;
+
+}
+.imageninferior {
+    text-align: center;
+    padding: 30px;
+    display: block;
+    margin: auto;
+    width: 1200px;
+    height: 550px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.imageninferior img {
+    width: 700px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px rgba(1, 1, 1, 0.442);
+}
+@keyframes slide {
+    0%{ margin-left: 0;}
+    20%{ margin-left: 0;}
+
+    25%{ margin-left: -100%;}
+    45%{ margin-left: -100%;}
+
+    50%{ margin-left: -200%;}
+    70%{ margin-left: -200%;}
 }
