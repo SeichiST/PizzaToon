@@ -4,6 +4,14 @@ const   carrito = document.getElementById("carrito"),
 
 let ArticulosCarrito = [];
 
+document.addEventListener("DOMContentLoaded", () => {
+    const datosGuardados = localStorage.getItem("carritoPizzaToon");
+    if (datosGuardados) {
+        ArticulosCarrito = JSON.parse(datosGuardados);
+        CarritoHTML();
+    }
+});
+
 RegistrarEventListener()
 
 function RegistrarEventListener() {
@@ -66,9 +74,10 @@ function CarritoHTML() {
             <p>${Producto.cantidad}</p>
             <p><span class="Borrar" data-id="${Producto.id}">X</span></p>        
         `;
-
         contenedorCart.appendChild(fila)
     });
+    
+    localStorage.setItem("carritoPizzaToon", JSON.stringify(ArticulosCarrito));
 }
 
 //Eliminar productos
