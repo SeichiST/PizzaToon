@@ -8,12 +8,23 @@ RegistrarEventListener()
 
 function RegistrarEventListener() {
     productList.addEventListener('click', agregarProd);
+
+//Elimminar producto
+     carrito.addEventListener('click', eliminarProd);
 }
 
 function agregarProd(e) {
     if (e.target.classList.contains("agregar_carrito")){
         const Producto_select = e.target.parentElement.parentElement.parentElement;
     leerInfo(Producto_select)
+    }
+}
+
+function eliminarProd(e) {
+    if (e.target.classList.contains("Borrar")){
+        const ProdID = e.target.getAttribute('data-id');   
+        ArticulosCarrito = ArticulosCarrito.filter(Producto => Producto.id !== ProdID);
+        CarritoHTML();
     }
 }
 // Agarra la informacion :)
@@ -54,7 +65,7 @@ function CarritoHTML() {
             <p>${Producto.titulo}</p>
             <p>S/.${totalPrecio.toFixed(2)}</p>
             <p>${Producto.cantidad}</p>
-            <p><span><strong>X</strong></span></p>        
+            <p><span class="Borrar" data-id="${Producto.id}"><strong>X</strong></span></p>        
         `;
 
         contenedorCart.appendChild(fila)
