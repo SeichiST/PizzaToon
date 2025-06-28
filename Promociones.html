@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="Css/Lasaña.css">
+    <title>Promociones</title>
+    <link rel="stylesheet" href="Css/Promociones.css">
     <link rel="stylesheet" href="Css/Carrito.css">
 </head>
 <body>
@@ -42,18 +42,85 @@
             <img class="carro" src="Img/carro de compra.png" alt="">
         </header>
         <section>
-            
+            <div class="General" id="lista_de_prod">
+                <h2 id="Original">Promos</h2>
+                <div class="Promos">
+                    <div class="Marco">
+                        <img src="Img/Promos/Combo Familiar.png" alt="">
+                        <div class="infoHei">
+                            <div class="info">
+                            <h3>Mega Combo Familia</h3>
+                            <p>
+                                Llevate este combo familiar con 2 pizzas grandes y 1 bebida de 2L.
+                            </p>
+                            </div>
+                            <div class="precio">
+                            <button class="agregar_carrito" data-id="1">Ordenar</button>
+                            <p class="dinero">S/.25.90</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Marco">
+                        <img src="Img/Promos/Combo Pizza + Lasaña.png" alt="">
+                        <div class="infoHei">
+                            <div class="info">
+                            <h3>Combo Pizza + Lasaña</h3>
+                            <p>
+                                Llevate este combo de una pizza + una lasaña de tu elección y 2 bebidas tamaño personal Gratis  .
+                            </p>
+                            </div>
+                            <div class="precio">
+                            <button class="agregar_carrito" data-id="2">Ordenar</button>
+                            <p class="dinero">S/.18.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Marco">
+                        <img src="Img/Promos/Promo 2 + 1.png" alt="">
+                        <div class="infoHei">
+                            <div class="info">
+                            <h3>Promo 2 + 1</h3>
+                            <p>
+                                Llevate 2 pizzas + 1 gratis, elige tus sabores favoritos.
+                            </p>
+                            </div>
+                            <div class="precio">
+                            <button class="agregar_carrito" data-id="3">Ordenar</button>
+                            <p class="dinero">S/.22.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Marco">
+                        <img src="Img/Promos/Promo Pizza + Bebida.png" alt="">
+                        <div class="infoHei">
+                            <div class="info">
+                            <h3>Promo Pizza + Bebida</h3>
+                            <p>
+                                Llevate una pizza de tu elección + una bebida de 1.5L.
+                            </p>
+                            </div>
+                            <div class="precio">
+                            <button class="agregar_carrito" data-id="4">Ordenar</button>
+                            <p class="dinero">S/.16.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="btnSubir">⬆</button>
         </section>
         <footer>
             <p>
                 Derecho de consumir la pizza en buen estado
             </p>
             <div>
-            <img src="Img/Instagram.png" alt="">
-            <img src="Img/facebook.png" alt="">
-            <img src="Img/whatsapp.png" alt="">
+            <img src="Img/Instagram.png" alt="Instagram">
+            <img src="Img/facebook.png" alt="facebook">
+            <img src="Img/whatsapp.png" alt="whatsapp">
             </div>
         </footer>
     </div>
+    <script src="js/Carrito.js"></script>
+    <script src="js/Boton_subir.js"></script>
 </body>
 </html>
