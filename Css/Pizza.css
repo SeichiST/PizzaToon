@@ -11,6 +11,7 @@ html {
     flex-direction: column;
     background-color: rgb(255, 173, 20);
     width: 100%;
+    
 }
 body {
     margin: 0;
@@ -156,6 +157,16 @@ section div img {
     font-size: 25px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+.infoHei button:hover {
+    background-color: rgb(255, 94, 0);
+    color: white;
+    transform: scale(1.05);
+}
+.infoHei button:active {
+    background-color: rgb(200, 120, 0);
+    transform: scale(0.96);
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
 .precio {
     display: flex;
     justify-content: space-between;
@@ -184,6 +195,28 @@ footer img {
     width: 60px;
     height: 60px;
 }
+/*Boton subir*/
+#btnSubir {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 999;
+    background-color: #ff990057;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 40px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+    display: none; /* Oculto por defecto */
+    transition: opacity 0.3s ease;
+}
+
+#btnSubir:hover {
+    background-color: #e68a00;
+}
+
 /*Tamaño de la página*/
 @media (max-width: 1419px) {
     .AllPizza {
