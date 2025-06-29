@@ -16,18 +16,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function RegistrarEventListener() {
     if (productList) {
-        productList.addEventListener('click', agregarProd);
+        productList.addEventListener('click', agregarProd),
+        productList.addEventListener('click', agregarProd2),
+        productList.addEventListener('click', agregarProd3);
     }
 
 //Elimminar producto
      carrito.addEventListener('click', eliminarProd);
 
 }
-
+//Agregar la pizza
 function agregarProd(e) {
     if (e.target.classList.contains("agregar_carrito")) {
         const Producto_select = e.target.closest('.pizzaMarco');
         leerInfo(Producto_select);
+    }
+}
+//Agregar la lasaña
+function agregarProd2(e) {
+    if (e.target.classList.contains("agregar_carrito")) {
+        const Producto_select2 = e.target.closest('.LasañasMarco');
+        leerInfo(Producto_select2);
+    }
+}
+//Agregar Pormociones
+function agregarProd3(e) {
+    if (e.target.classList.contains("agregar_carrito")) {
+        const Producto_select3 = e.target.closest('.Marco');
+        leerInfo(Producto_select3);
     }
 }
 
