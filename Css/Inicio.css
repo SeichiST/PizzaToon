@@ -132,14 +132,14 @@ footer img {
     display: flexbox;
     margin: auto;
     justify-content: center;
-    width: 650px;
+    width: 690px;
     height: 400px;
     margin: 10px, auto 0;
     overflow: hidden;
 }
 .carrusel img {
     text-align: center;
-    width: 650px;
+    width: 690px;
     height: 400px;
 }
 .carrusel ul{
@@ -156,18 +156,20 @@ footer img {
 
 }
 .imageninferior {
-    text-align: center;
-    padding: 30px;
-    display: block;
+    display: flexbox;
     margin: auto;
-    width: 1200px;
-    height: 550px;
-    align-items: center;
     justify-content: center;
-    height: 100%;
+    padding: 30px;
+    width: 690px;
+    height: 400px;
+    margin: 10px, auto 0;
+    overflow: hidden;
+       
 }
 .imageninferior img {
-    width: 700px;
+    text-align: center;
+    width: 100%;
+    width: 690px;
     height: 400px;
     border-radius: 10px;
     box-shadow: 5px 10px 10px rgba(1, 1, 1, 0.442);
