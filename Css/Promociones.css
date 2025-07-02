@@ -100,6 +100,8 @@ section {
     border-radius: 10px;
     background-color: rgb(255, 199, 95);
     padding: 5px;
+    width: 1800px;
+    height: 790px;
 }
 section h2 {
     padding: 0px 30px;
@@ -113,7 +115,7 @@ section h2 {
     flex-wrap: wrap;
     gap: 10px;
     width: 630px;
-    height: 200px;
+    height: 200px; 
 }
 .infoHei {
     border: 5px solid rgba(255, 255, 255, 0.26);
@@ -182,6 +184,8 @@ section div img {
 }
 /*Inicio del pie*/
 footer {
+    position: fixed;
+    bottom: 0;
     width: 100%;
     padding: 0 10px;
     align-items: center;
@@ -238,4 +242,3 @@ footer img {
         height: 20px;
     }
 }
-.
