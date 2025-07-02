@@ -90,7 +90,7 @@ function CarritoHTML() {
             <p>${Producto.titulo}</p>
             <p>S/.${totalPrecio.toFixed(2)}</p>
             <p>${Producto.cantidad}</p>
-            <p><span class="Borrar" data-id="${Producto.id}">X</span></p>        
+            <p><span bold class="Borrar" data-id="${Producto.id}">X</span></p>        
         `;
         contenedorCart.appendChild(fila)
     });
