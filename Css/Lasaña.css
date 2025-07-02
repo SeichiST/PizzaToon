@@ -126,7 +126,7 @@ section h2 {
 .Lasañas {
     border-radius: 10px;
     background-color: rgba(247, 189, 63, 0.473);
-    margin: 0px 50px 5px 10px;
+    margin: 0px 10px 10px 10px;
     padding: 5px 20px 20px;
     display: flex;
     flex-wrap: wrap;
@@ -187,8 +187,8 @@ footer img {
 /*Boton subir*/
 #btnSubir {
     position: fixed;
-    bottom: 25px;
-    right: 25px;
+    bottom: 95px;
+    right: 30px;
     z-index: 999;
     background-color: #ff990057;
     color: rgb(255, 255, 255);
